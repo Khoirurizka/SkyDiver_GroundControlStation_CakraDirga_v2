@@ -1,0 +1,73 @@
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\SkyDiver GCS.exe.config
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\SkyDiver GCS.exe
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\SkyDiver GCS.pdb
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Controls.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Imaging.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Math.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Video.DirectShow.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Video.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\CaptureManagerToCSharpProxy.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\EntityFramework.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\EntityFramework.SqlServer.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\GMap.NET.Core.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\GMap.NET.WindowsForms.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\GMap.NET.WindowsForms.Utils.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\GMap.NET.WindowsPresentation.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\LINQPad.exe
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\lprun.exe
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\MathNet.Numerics.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\Newtonsoft.Json.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\Polylines.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\PriorityQueue.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Buffers.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.CodeDom.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SqlClient.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SQLite.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SQLite.EF6.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SQLite.Linq.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Memory.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Numerics.Vectors.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Security.Principal.Windows.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.ValueTuple.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Controls.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Imaging.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Math.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Video.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AForge.Video.DirectShow.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\EntityFramework.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\EntityFramework.SqlServer.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\LINQPad.exe.config
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\lprun.exe.config
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\MathNet.Numerics.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\Newtonsoft.Json.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\PriorityQueue.pdb
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\PriorityQueue.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Buffers.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.CodeDom.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SqlClient.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Data.SQLite.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Memory.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Numerics.Vectors.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.Security.Principal.Windows.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\System.ValueTuple.xml
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\Interop.WMPLib.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\bin\x86\Debug\AxInterop.WMPLib.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.csprojAssemblyReference.cache
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\Interop.WMPLib.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\AxInterop.WMPLib.dll
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.csproj.ResolveComReference.cache
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.ConfigTuning.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.HomePanel.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.MainWindow.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.PlanPanel.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.GCSSetting.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver_GCS.Properties.Resources.resources
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.csproj.GenerateResource.cache
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.csproj.CoreCompileInputs.cache
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.csproj.CopyComplete
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.exe
+E:\Elektro\MyReaserch\GroundControlSystem\SkyDiver GCS\obj\x86\Debug\SkyDiver GCS.pdb

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBF2A990-83A8-4541-81D0-A688CC188FDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SkyDiver_GCS</RootNamespace>
+    <AssemblyName>SkyDiver GCS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Controls.2.2.5\lib\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CaptureManagerToCSharpProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CaptureManager.1.20.0\lib\CaptureManagerToCSharpProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.1.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.Core.2.1.6\lib\net47\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.1.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.WinForms.2.1.6\lib\net47\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.1.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.WinPresentation.2.1.6\lib\net47\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="LINQPad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=21353812cd2a2db5, processorArchitecture=MSIL">
+      <HintPath>packages\LINQPad.5.40.0\lib\net46\LINQPad.exe</HintPath>
+    </Reference>
+    <Reference Include="lprun, Version=1.0.0.0, Culture=neutral, PublicKeyToken=21353812cd2a2db5, processorArchitecture=x86">
+      <HintPath>packages\LINQPad.5.40.0\lib\net46\lprun.exe</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MathNet.Numerics.5.0.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polylines, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Polylines.1.0.0\lib\Polylines.dll</HintPath>
+    </Reference>
+    <Reference Include="PriorityQueue, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5e136dbf0437dacd, processorArchitecture=MSIL">
+      <HintPath>packages\OptimizedPriorityQueue.5.1.0\lib\net45\PriorityQueue.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.CodeDom.6.0.0\lib\net461\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.116.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.116.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassUI\CompassPOV.cs" />
+    <Compile Include="ClassUI\Altimeter.cs" />
+    <Compile Include="ClassUI\Gyro.cs" />
+    <Compile Include="class\Filters.cs" />
+    <Compile Include="class\LogPrint.cs" />
+    <Compile Include="class\ImageVideoStream.cs" />
+    <Compile Include="class\MavlinkServiceCommand.cs" />
+    <Compile Include="Enum\EMavlinkServiceCommands.cs" />
+    <Compile Include="Form\PartialForm\ConfigTuning\ConfigTuningVarComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PartialForm\GCSSetting\GCSSettingVarComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PartialForm\HomePanel\HomePanelVarComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mavlink\ByteArrayUtil.cs" />
+    <Compile Include="class\CustomControl.cs" />
+    <Compile Include="class\EditStructGroupVar.cs" />
+    <Compile Include="class\MavLinkServiceMessage.cs" />
+    <Compile Include="class\MultiThread.cs" />
+    <Compile Include="class\SerialPortConnection.cs" />
+    <Compile Include="Form\PartialForm\MainWindow\MainWindowVarComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class\SerialPortService.cs" />
+    <Compile Include="Mavlink\ConfigTuningVar.cs" />
+    <Compile Include="Mavlink\FrameworkBitConverter.cs" />
+    <Compile Include="MapMarker\TextMarker.cs" />
+    <Compile Include="Mavlink\Mavlink.cs" />
+    <Compile Include="Mavlink\MavLink.generated.cs" />
+    <Compile Include="Mavlink\MavLink_codec.generated.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stuct\SFilters.cs" />
+    <Compile Include="Stuct\SPayloadBay.cs" />
+    <Compile Include="Stuct\SSerialCom.cs" />
+    <Compile Include="Variable\BatteryVar.cs" />
+    <Compile Include="Variable\GCSSettingVar.cs" />
+    <Compile Include="Variable\GyroVar.cs" />
+    <Compile Include="Variable\MassageAndCommandVar.cs" />
+    <Compile Include="Variable\MavlinkComVar.cs" />
+    <Compile Include="Variable\PlaneControlVar.cs" />
+    <Compile Include="Variable\PlaneLocationVar.cs" />
+    <Compile Include="Variable\PlaneModeVar.cs" />
+    <Compile Include="Enum\EMapAndPlan.cs" />
+    <Compile Include="Form\ConfigTuning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ConfigTuning.Designer.cs">
+      <DependentUpon>ConfigTuning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PartialForm\HomePanel\HomePanelScaleResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\HomePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\HomePanel.Designer.cs">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GCSSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GCSSetting.Designer.cs">
+      <DependentUpon>GCSSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\PanelAndSpliterModify.cs" />
+    <Compile Include="Form\PartialForm\MainWindow\MainWindowScaleResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PlanPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PlanPanel.Designer.cs">
+      <DependentUpon>PlanPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PartialForm\PlanPlane\PlanPanelScaleResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class\MapSystem.cs" />
+    <Compile Include="MapMarker\CircleMarker.cs" />
+    <Compile Include="MapMarker\PlanePoint.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stuct\SMapAndPlan.cs" />
+    <Compile Include="Stuct\SPanelAndSpliter.cs" />
+    <Compile Include="Variable\MapsVar.cs" />
+    <Compile Include="Variable\serialComVar.cs" />
+    <Compile Include="Variable\SpeedVar.cs" />
+    <Compile Include="Variable\StreamVar.cs" />
+    <EmbeddedResource Include="Form\ConfigTuning.resx">
+      <DependentUpon>ConfigTuning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\HomePanel.resx">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PlanPanel.resx">
+      <DependentUpon>PlanPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GCSSetting.resx">
+      <DependentUpon>GCSSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControlToolBox\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engine Off 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engine On 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnConnectSerial 200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDisconnectSerial 200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battery 30 400.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battery 60 400.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn Reset 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cakra Dirga Logo 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tubitak 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo UM 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Btn Home 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Btn GCS Setting 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Btn ConfigTuning 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Btn Plan 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battery Empty 400.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battery Full 400.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawWaypointActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawWaypointDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawFlightZoneActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawFlightZoneDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawPoleActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawPoleDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawDropingPointActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawDropingPointDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawDropingZoneActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDrawDropingZoneDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRulerActive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRulerDisactive_490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Search Plane 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn Search Plane 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn Search Location 490.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
